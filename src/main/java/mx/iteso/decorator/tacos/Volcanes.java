@@ -9,6 +9,7 @@ public class Volcanes extends Taco{
 
         public Volcanes(){
             description = "Volcan";
+            size = REGULAR;
         }
 
         @Override
