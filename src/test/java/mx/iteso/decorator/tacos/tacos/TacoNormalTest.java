@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class TacoNormalTest {
     @Test
     public void testCost() {
-        Taco taco = new TacoNormal();
+        Taco taco = new TacoNormal(Taco.REGULAR);
         assertEquals(8.0, taco.cost(),0);
     }
 }
