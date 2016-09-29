@@ -17,6 +17,6 @@ public class Lengua  extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 2 + taco.cost();
+        return taco.cost() + size == MINI? 2.00 : size == REGULAR? 3.00 : 4.00;
     }
 }

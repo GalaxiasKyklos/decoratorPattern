@@ -9,7 +9,9 @@ import mx.iteso.decorator.Taco;
 public class Camaron extends CondimentsDecorator {
     Taco taco;
 
-    public Camaron (Taco taco){
+    public Camaron (Taco taco) throws Exception {
+        if (taco.size == MINI)
+            throw new Exception("Los tacos de camarón no pueden ser mini");
         this.taco = taco;
     }
 
@@ -20,6 +22,6 @@ public class Camaron extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 0 + taco.cost();
+        return taco.cost() + size == MINI? 3.00 : size == REGULAR? 4.00 : 5.00;
     }
 }
