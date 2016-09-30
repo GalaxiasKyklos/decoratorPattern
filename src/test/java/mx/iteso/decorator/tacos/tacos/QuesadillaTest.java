@@ -11,8 +11,18 @@ import static org.junit.Assert.assertEquals;
  */
 public class QuesadillaTest {
     @Test
-    public void testCost() {
+    public void testCostReg() {
         Taco taco = new Quesadilla(Taco.REGULAR);
         assertEquals(10.0, taco.cost(),0);
+    }
+    @Test
+    public void testCostMin() {
+        Taco taco = new Quesadilla(Taco.MINI);
+        assertEquals(8.0, taco.cost(),0);
+    }
+    @Test
+    public void testCostMeg() {
+        Taco taco = new Quesadilla(Taco.MEGA);
+        assertEquals(20.0, taco.cost(),0);
     }
 }
