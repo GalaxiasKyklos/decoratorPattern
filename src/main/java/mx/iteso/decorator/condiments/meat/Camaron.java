@@ -17,7 +17,7 @@ public class Camaron extends CondimentsDecorator {
 
     @Override
     public String getDescription() {
-        return taco.getDescription() + " de camarón";
+        return taco.getDescription() + " de camaron";
     }
 
     @Override

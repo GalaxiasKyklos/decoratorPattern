@@ -9,9 +9,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by Saúl on 29/09/2016.
+ * Created by Saúl on 30/09/2016.
  */
-public class PastorTest {
+public class LenguaTest {
     private Taco taco;
     @Before
     public void setUp(){
@@ -20,16 +20,16 @@ public class PastorTest {
 
     @Test
     public void testCost(){
-        Taco pastor = new Pastor(taco);
+        Taco lengua = new Lengua(taco);
         when(taco.cost()).thenReturn(8.0);
-        double cost = pastor.cost();
-        assertEquals(8.0, cost,0);
+        double cost = lengua.cost();
+        assertEquals(10.0, cost,0);
     }
     @Test
     public void testDescription() {
-        Taco pastor = new Pastor(taco);
+        Taco lengua = new Lengua(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
-        String desc = pastor.getDescription();
-        assertEquals("Taco Normal de pastor", desc);
+        String desc = lengua.getDescription();
+        assertEquals("Taco Normal de lengua", desc);
     }
 }

@@ -28,14 +28,14 @@ public class CamaronTest {
     public void testDescriptionReg() throws Exception {
         Taco taco = new TacoNormal(Taco.REGULAR);
         taco = new Camaron(taco);
-        assertEquals("Taco normal regular de camarón", taco.getDescription());
+        assertEquals("Taco normal regular de camaron", taco.getDescription());
     }
 
     @Test
     public void testDescriptionMeg() throws Exception {
         Taco taco = new TacoNormal(Taco.MEGA);
         taco = new Camaron(taco);
-        assertEquals("Taco normal mega de camarón", taco.getDescription());
+        assertEquals("Taco normal mega de camaron", taco.getDescription());
     }
 
     @Test
